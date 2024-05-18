@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+
+    <link href="css/css-bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Ativadede 3 Paginas</title>
+</head>
+
+<body>
+    <p><a href="#pag-1" class="ui-btn ui-shadow ui-corner-all">Ir para Lista</a></p>
+    <p><a href="#pag-2" class="ui-btn ui-shadow ui-corner-all">Ir para Cadastro</a></p>
+    <p><a href="#pag-3" class="ui-btn ui-shadow ui-corner-all">Ir para Login</a></p>
+    <div class="row" id="pag-1" data-role="page">
+        <div role="main" class="ui-content">
+            <h2>Lista</h2>
+            <label>Nome</label>
+            <input class="form-control" type="text" id="nome" />
+            <label>Documento</label>
+            <input class="form-control" type="text" id="documento" />
+            <label>Celular</label>
+            <input class="form-control" type="text" id="celular" />
+            <label>Endereço</label>
+            <input class="form-control" type="text" id="logradouro" />
+            <label>Numero</label>
+            <input class="form-control" type="text" id="numero" />
+            <label>Bairro</label>
+            <input class="form-control" type="text" id="bairro" />
+            <label>Cidade</label>
+            <input class="form-control" type="text" id="cidade" />
+            <label>Estado</label>
+            <input class="form-control" type="text" id="estado" />
+            <button class="btn btn-success" onclick="enviar()">
+            Salvar dados
+           </button>
+            <button class="btn btn-warning" onclick="lerclientes()">
+          Ler Clientes
+         </button>
+            <br><br><br>
+
+            <p><a href="#pag-2" class="ui-btn ui-shadow ui-corner-all">Ir para Cadastro</a></p>
+            <p><a href="#pag-3" class="ui-btn ui-shadow ui-corner-all">Ir para Login</a></p>
+        </div>
+    </div>
+
+
+
+    <!-- CADASTRO -->
+
+    <div id="pag-2" data-role="page">
+        <div role="main" class="ui-content">
+            <h2>Cadastro</h2>
+            <p>Nome</p>
+            <input class="form-control" type="text" id="nome" name="nome">
+            <p>Celular</p>
+            <input class="form-control" type="text" id="celular" name="celular">
+            </table>
+            <p><a href="#pag-1" class="ui-btn ui-shadow ui-corner-all">Ir para Lista</a></p>
+            <p><a href="#pag-3" class="ui-btn ui-shadow ui-corner-all">Ir para Login</a></p>
+        </div>
+    </div>
+    <!-- LOGUIN -->
+    <div id="pag-3" data-role="page">
+        <div role="main" class="ui-content">
+            <h2>Login</h2>
+            <br>
+            <label for="username">Usuário:</label>
+            <input class="form-control" type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input class="form-control" type="password" id="password" name="password" required>
+            <br>
+            <button type="submit" class="btn btn-success">Entrar</button>
+            <br><br>
+            <p><a href="#pag-1" class="ui-btn ui-shadow ui-corner-all">Ir para Lista</a></p>
+            <p><a href="#pag-2" class="ui-btn ui-shadow ui-corner-all">Ir para Cadastro</a></p>
+        </div>
+    </div>
+
+    <script src="js/js-bootstrap/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cadastrocliente.js"></script>
+    <script src="js/lerclientes.js"></script>
+    <script src="js/armazenar.js"></script>
+</body>
+
+</html>
